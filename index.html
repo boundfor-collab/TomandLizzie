@@ -37,7 +37,33 @@
     <script>
       mapboxgl.accessToken = 'pk.eyJ1IjoiYm91bmRmb3IiLCJhIjoiY21mNndxYjB3MGd4ZzJxb214Z3Y3NmlhbSJ9.-66cqBZTGh8ahlUrHdxwQA';
 
-    //code from step 5 will go here
+      const geojson = {
+  type: 'FeatureCollection',
+  features: [
+    {
+      type: 'Feature',
+      geometry: {
+        type: 'Point',
+        coordinates: [-77.032, 38.913]
+      },
+      properties: {
+        title: 'Mapbox',
+        description: 'Washington, D.C.'
+      }
+    },
+    {
+      type: 'Feature',
+      geometry: {
+        type: 'Point',
+        coordinates: [-122.414, 37.776]
+      },
+      properties: {
+        title: 'Mapbox',
+        description: 'San Francisco, California'
+      }
+    }
+  ]
+};
     
     const map = new mapboxgl.Map({
         container: 'map',
@@ -46,7 +72,16 @@
         zoom: 3
       });
 
-      //code from step 6 will go here
+     for (const feature of geojson.features) {
+  
+  // code from step 7-1 will go here
+
+  // make a marker for each feature and add to the map
+  new mapboxgl.Marker().setLngLat(feature.geometry.coordinates).addTo(map);  // Replace this line with code from step 7-2
+
+   //code from step 8 will go here
+}
+
       
     </script>
   </body>
