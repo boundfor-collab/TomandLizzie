@@ -5,7 +5,7 @@
 <title>Guides</title>
 <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no">
 <link href="https://api.mapbox.com/styles/v1/boundfor/cmf721rje000o01p8d3l46pvr.html?title=view&access_token=pk.eyJ1IjoiYm91bmRmb3IiLCJhIjoiY21mNnlkeWV5MDZtbDJscHU1aWxvejd4aCJ9._3pZV0XxGgiW8kE-lue6qg&zoomwheel=true&fresh=true#6.49/40.477/-84.593">
-
+ <iframe width='100%' height='400px' src="https://api.mapbox.com/styles/v1/boundfor/cmf721rje000o01p8d3l46pvr.html?title=false&access_token=pk.eyJ1IjoiYm91bmRmb3IiLCJhIjoiY21mNnlkeWV5MDZtbDJscHU1aWxvejd4aCJ9._3pZV0XxGgiW8kE-lue6qg&zoomwheel=false#1.96/36.8/-114.15" title="Tom and Lizzie" style="border:none;"></iframe>
 <style>
 body { margin: 0; padding: 0; }
 #map { position: absolute; top: 0; bottom: 0; width: 100%; }
@@ -17,8 +17,7 @@ body { margin: 0; padding: 0; }
     mapboxgl.accessToken = 'pk.eyJ1IjoiYm91bmRmb3IiLCJhIjoiY21mNnlkeWV5MDZtbDJscHU1aWxvejd4aCJ9._3pZV0XxGgiW8kE-lue6qg';
     const map = new mapboxgl.Map({
         container: 'map',
-        style: 'mapbox://styles/boundfor/cmf721rje000o01p8d3l46pvr', // Use the standard style for the map
-        <iframe width='100%' height='400px' src="https://api.mapbox.com/styles/v1/boundfor/cmf721rje000o01p8d3l46pvr.html?title=false&access_token=pk.eyJ1IjoiYm91bmRmb3IiLCJhIjoiY21mNnlkeWV5MDZtbDJscHU1aWxvejd4aCJ9._3pZV0XxGgiW8kE-lue6qg&zoomwheel=false#1.96/36.8/-114.15" title="Tom and Lizzie" style="border:none;"></iframe>
+       
     });
 
     map.addControl(new mapboxgl.NavigationControl());
