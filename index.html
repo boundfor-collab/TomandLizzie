@@ -95,20 +95,15 @@
         zoom: 3
       });
 
-      //code from step 6 will go here
-// add markers to map
 for (const feature of geojson.features) {
-  
-  // code from step 7-1 will go here
-// create a HTML element for each feature
+
 
 const el = document.createElement('div');
 el.className = 'marker';
 
-  // make a marker for each feature and add to the map
+ 
   new mapboxgl.Marker().setLngLat(feature.geometry.coordinates).addTo(map);  new mapboxgl.Marker(el).setLngLat(feature.geometry.coordinates).addTo(map); 
 
- // Replace this line with code from step 7-2
 
    new mapboxgl.Marker(el)
 
@@ -116,7 +111,7 @@ el.className = 'marker';
 
   .setPopup(
 
-    new mapboxgl.Popup({ offset: 25 }) // add popups
+    new mapboxgl.Popup({ offset: 25 }) 
 
       .setHTML(
 
